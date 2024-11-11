@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datasheet ESP32 DevKit V1</title>
+    <script>
+        function mostrarSeccion(seccion) {
+            // Oculta todas las secciones
+            document.querySelectorAll('.seccion').forEach(function(el) {
+                el.style.display = 'none';
+            });
+            // Muestra solo la sección seleccionada
+            document.getElementById(seccion).style.display = 'block';
+        }
+    </script>
+</head>
+<body onload="mostrarSeccion('introduccion')">
+
+    <h1 style="text-align: center;">Datasheet ESP32 DevKit V1</h1>
+
+    <!-- Navegación -->
+    <div style="text-align: center; margin-bottom: 20px;">
+        <button onclick="mostrarSeccion('introduccion')">Introducción</button>
+        <button onclick="mostrarSeccion('caracteristicas')">Características Principales</button>
+        <button onclick="mostrarSeccion('especificaciones')">Especificaciones Técnicas</button>
+        <button onclick="mostrarSeccion('pines')">Configuración de Pines</button>
+
+    </div>
+
+    <!-- Secciones de contenido -->
+    <div id="introduccion" class="seccion">
+        <h2>Introducción</h2>
+        <p>El ESP32 DevKit V1 es una plataforma de desarrollo basada en el chip ESP32 de Espressif. 
+        Incluye conectividad Wi-Fi y Bluetooth, siendo ideal para proyectos de IoT y aplicaciones de bajo consumo energético.</p>
+        <p style="text-align: center;">
+            <img src="esp32.jpg" alt="ESP32 DevKit V1" width="300">
+        </p>
+    </div>
+
+    <div id="caracteristicas" class="seccion" style="display: none;">
+        <h2>Características Principales</h2>
+        <ul>
+            <li>Microprocesador: Xtensa® dual-core de 32 bits.</li>
+            <li>Frecuencia de Reloj: Hasta 240 MHz.</li>
+            <li>Memoria RAM: 520 KB SRAM.</li>
+            <li>Memoria Flash: 4 MB.</li>
+            <li>Conectividad: Wi-Fi 802.11 b/g/n y Bluetooth 4.2 BLE.</li>
+            <li>Voltaje de Operación: 3.3V.</li>
+            <li>Pines de Entrada/Salida: 34 GPIO.</li>
+        </ul>
+    </div>
+
+    <div id="especificaciones" class="seccion" style="display: none;">
+        <h2>Especificaciones Técnicas</h2>
+        <table border="1" width="100%" cellpadding="5">
+            <tr>
+                <th>Especificación</th>
+                <th>Detalle</th>
+            </tr>
+            <tr>
+                <td>Microprocesador</td>
+                <td>Xtensa® dual-core LX6</td>
+            </tr>
+            <tr>
+                <td>Frecuencia</td>
+                <td>Hasta 240 MHz</td>
+            </tr>
+            <tr>
+                <td>Memoria Flash</td>
+                <td>4 MB</td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>520 KB SRAM</td>
+            </tr>
+            <tr>
+                <td>Bluetooth</td>
+                <td>BLE y Clásico</td>
+            </tr>
+            <tr>
+                <td>Wi-Fi</td>
+                <td>802.11 b/g/n</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="pines" class="seccion" style="display: none;">
+        <h2>Configuración de Pines</h2>
+        <p>Diagrama de los pines del ESP32 DevKit V1:</p>
+        <p style="text-align: center;">
+            <img src="pinesdevkit.jpg" alt="Diagrama de Pines ESP32" width="400">
+        </p>
+        <p>Algunos pines clave incluyen ADC, DAC, UART, SPI, y pines GPIO configurables para E/S digitales y PWM.</p>
+    </div>
+
+
+</body>
+</html>

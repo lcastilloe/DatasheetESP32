@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datasheet ESP32 DevKit V1</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Datasheet ESP32 DevKit V1</h1>
+    <p style="text-align: right;">By Marcela Castillo</p>
+    <hr>
+    <table width="100%" cellpadding="10">
+        <tr>
+            <td width="33%">
+                <h2>Introducción</h2>
+                <p>
+                    El ESP32 DevKit V1 es un módulo de desarrollo basado en el chip ESP32 de Espressif,
+                    diseñado para aplicaciones de IoT. Incluye conectividad Wi-Fi y Bluetooth, y es ideal
+                    para proyectos de bajo consumo.
+                </p>
+            </td>
+            <td width="33%" style="text-align: center;">
+                <img src="esp32.jpg" alt="Imagen del ESP32 DevKit V1" width="500">
+            </td>
+            <td width="33%">
+                <h2>Características Principales</h2>
+                <ul>
+                    <li>Arquitectura: Xtensa® dual-core 32 bits.</li>
+                    <li>Frecuencia: Hasta 240 MHz.</li>
+                    <li>Memoria RAM: 520 KB SRAM.</li>
+                    <li>Memoria Flash: 4 MB.</li>
+                    <li>Conectividad: Wi-Fi 802.11 b/g/n y Bluetooth 4.2 BLE.</li>
+                    <li>Voltaje de Operación: 3.3V.</li>
+                    <li>Puertos de E/S: 34 pines GPIO.</li>
+                    <li>Interfaces de Comunicación: SPI, I2C, UART, PWM, ADC, DAC.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <hr> 
+    <h2 style="text-align: center;">Especificaciones Técnicas</h2>
+    <table width="100%" cellpadding="10">
+        <tr>
+            <td width="50%">
+                <table border="1" width="100%" cellpadding="5">
+                    <tr>
+                        <th>Especificación</th>
+                        <th>Detalles</th>
+                    </tr>
+                    <tr>
+                        <td>Microprocesador</td>
+                        <td>Xtensa® dual-core LX6</td>
+                    </tr>
+                    <tr>
+                        <td>Frecuencia de reloj</td>
+                        <td>Hasta 240 MHz</td>
+                    </tr>
+                    <tr>
+                        <td>Memoria Flash</td>
+                        <td>4 MB</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>520 KB SRAM</td>
+                    </tr>
+                    <tr>
+                        <td>Bluetooth</td>
+                        <td>BLE y Clásico</td>
+                    </tr>
+                    <tr>
+                        <td>Wi-Fi</td>
+                        <td>802.11 b/g/n</td>
+                    </tr>
+                </table>
+            </td>
+            <td width="50%" style="text-align: center;">
+                <img src="pinesdevkit.jpg" alt="Configuración de Pines ESP32" width="500">
+            </td>
+        </tr>
+    </table>
+    <hr> 
+    <h2 style="text-align: center;">Especificaciones Ambientales</h2>
+    <table border="1" width="50%" cellpadding="10" align="center">
+        <tr>
+            <th>Parámetro</th>
+            <th>Rango</th>
+        </tr>
+        <tr>
+            <td>Temperatura de Operación</td>
+            <td>-40°C a 85°C</td>
+        </tr>
+        <tr>
+            <td>Humedad</td>
+            <td>Hasta 90% sin condensación</td>
+        </tr>
+    </table>
+    <hr> 
+    <table width="100%" cellpadding="10">
+        <tr>
+            <td width="33%">
+                <h2>Aplicaciones Típicas</h2>
+                <ul>
+                    <li>Proyectos IoT (Internet de las Cosas)</li>
+                    <li>Dispositivos portátiles y wearables</li>
+                    <li>Automatización del hogar</li>
+                    <li>Sistemas de sensores remotos</li>
+                    <li>Monitoreo ambiental</li>
+                    <li>Proyectos de robótica</li>
+                </ul>
+            </td>
+            <td width="33%">
+                <h2>Requisitos de Programación</h2>
+                <ul>
+                    <li>Monitor de temperatura y humedad para el hogar.</li>
+                    <li>Control remoto de luces y dispositivos eléctricos mediante una app móvil.</li>
+                    <li>Estación meteorológica con datos en la nube.</li>
+                    <li>Sumo controlado a través de Bluetooth con control de XBOX.</li>
+                </ul>
+            </td>
+            <td width="33%">
+                <h2>Posibles Proyectos a Desarrollar</h2>
+                <p>El ESP32 DevKit V1 es compatible con varios entornos de desarrollo, incluyendo:</p>
+                <ul>
+                    <li>Arduino IDE</li>
+                    <li>ESP-IDF (Espressif IoT Development Framework)</li>
+                    <li>MicroPython</li>
+                </ul>
+                <p>Se programa a través de USB y soporta bootloader.</p>
+            </td>
+        </tr>
+    </table>
+    <hr> 
+    <table width="100%" cellpadding="10">
+        <tr>
+            <td width="33%">
+                <h2 style="text-align: center ;">Proyecto: Sumo RC controlado con control de XBOX</h2>
+            </td>
+            <td width="33%" style="text-align: center;">
+                <img src="usoesp32.png" alt="Imagen del ESP32 DevKit V1" width="250">
+            </td>
+            <td width="33%">
+                <img src="SUMORC.png" alt="Imagen del ESP32 DevKit V1" width="250">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
